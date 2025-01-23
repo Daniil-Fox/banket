@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Сайт</title>
+  <link
+    rel="preload"
+    href="fonts/Cormorant-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Gilroy-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Bold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <nav class="nav header__nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link"> О нас </a>
+          </li>
+          <li class="nav__item">
+            <a href="#service" class="nav__link"> Услуги </a>
+          </li>
+          <li class="nav__item">
+            <a href="#specific" class="nav__link"> Особенности услуг </a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefits" class="nav__link"> Наши преимущества </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./" class="header__logo">
+        <img src="./img/logo.webp" alt="" />
+      </a>
+      <div class="header__right">
+        <nav class="nav header__nav">
+          <ul class="list-reset nav__list">
+            <li class="nav__item">
+              <a href="#geo" class="nav__link"> Где обслуживаем? </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+79771963555" class="header__tel">
+          <img src="./img/whatsapp.svg" alt="" />
+          <span>+7 (977) 196-35-55</span>
+        </a>
+
+        <button
+          class="btn-reset burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger
+        >
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+    <div class="menu" data-menu>
+  <div class="menu__body">
+    <nav class="nav menu__nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-menu-item> О нас </a>
+        </li>
+        <li class="nav__item">
+          <a href="#service" class="nav__link" data-menu-item> Услуги </a>
+        </li>
+        <li class="nav__item">
+          <a href="#specific" class="nav__link" data-menu-item>
+            Особенности услуг
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#benefits" class="nav__link" data-menu-item>
+            Наши преимущества
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="nav menu__nav">
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#geo" class="nav__link" data-menu-item> Где обслуживаем? </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link" data-menu-item> Контакты </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+  </div>
+</header>
+
+      <main class="main">
+        <section class="hero">
+  <div class="container">
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">Мы создаем атмосферу праздника</h1>
+        <p class="hero__desc">
+          каждая деталь — от изысканных блюд до душевной обстановки — работает
+          на ваше удовольствие.
+        </p>
+        <div class="hero__row">
+          <button
+            class="btn-reset hero__btn btn"
+            data-label="Пишите нам в Telegram и Whatsapp"
+          >
+            заказать мероприятие
+          </button>
+          <a href="#" class="btn-reset hero__btn btn btn--soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#tg"></use>
+            </svg>
+          </a>
+          <a href="#" class="btn-reset hero__btn btn btn--soc">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#whatsapp"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero__img">
+        <img src="./img/hero.webp" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="about" id="about">
+  <div class="container">
+    <div class="about__container">
+      <div class="about__content">
+        <h2 class="title2 about__title">О нас</h2>
+        <p class="desc about__desc">
+          Добро пожаловать в <span>Latteria1963</span> — место, где гастрономия
+          превращается в искусство. Мы создаем атмосферу праздника, где каждая
+          деталь — от изысканных блюд до душевной обстановки — работает на ваше
+          удовольствие.
+        </p>
+        <div class="desc">
+          <span>Организуем:</span><br /><br />
+          — Теплый семейный ужин или корпоративный банкет.<br />
+          — Бизнес-завтрак в спокойной атмосфере. <br />
+          — День рождения или baby shower, который запомнится<br />
+          надолго. <br />
+          — Наш бренд-шеф лично готовит блюда прямо перед гостями, превращая
+          процесс в шоу. Только свежие ингредиенты, только уникальные рецепты.
+
+          <br /><br />
+          Мы работаем в Москве и области, доставляя вкус и стиль туда, где это
+          нужно вам.
+        </div>
+      </div>
+
+      <div class="about__img">
+        <img src="./img/about.webp" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="service" id="service">
+  <div class="container">
+    <h2 class="title2 service__title title2--white">Услуги</h2>
+
+    <div class="service__container border-container">
+      <div class="service__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="service__item service-item">
+              <div class="service-item__left">
+                <div class="service-item__title">Кейтеринг</div>
+                <p class="desc service-item__desc">
+                  Ресторанная еда от Бренд-шефа в мини-формате идеально подходит
+                  для фуршетныхстолов. Меню включает изысканные закуски,канапе,
+                  мини-десерты и многое другое.
+                  <br /><br />
+                  Все блюда превосходно подходят для деловых встреч, свадеб и
+                  частных мероприятий.
+                  <br /><br />
+                  Доставка и обслуживание включены.
+                </p>
+              </div>
+              <div class="service-item__img">
+                <img src="./img/service/01.webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service__item service-item">
+              <div class="service-item__left">
+                <div class="service-item__title">Банкеты/Мероприятия</div>
+                <p class="desc service-item__desc">
+                  Уютные залы на 30 посадочных мест с возможностью фуршетной
+                  зоны
+                  <br /><br />
+                  Полное сопровождение мероприятий под ключ: аренда звукового
+                  оборудования, услуги диджея, фотографа и видеографа и ведущего
+                  <br /><br />
+                  Возможность организовать интерактивные игры для взрослых и
+                  детей, винные дегустации и мастер-классы от Бренд-шефа
+                  <br /><br />
+                  Живая музыка и профессиональные музыканты для создания
+                  атмосферы
+                </p>
+              </div>
+              <div class="service-item__img">
+                <img src="./img/service/02.webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service__item service-item">
+              <div class="service-item__left">
+                <div class="service-item__title">Бизнес-завтраки/коворкинг</div>
+                <p class="desc service-item__desc">
+                  Latteria1963 Group предоставляет возможность организации
+                  закрытых мероприятий с бизнес-атмосферой
+                  <br /><br />
+                  Индивидуальное меню, составленное под формат деловой встречи
+                  <br /><br />
+                  Тихая и спокойная обстановка, подходящая для проведения
+                  переговоров, коворкинга и нетворкинга
+                  <br /><br />
+                  Возможность закрытия ресторана полностью для эксклюзивного
+                  использования
+                </p>
+              </div>
+              <div class="service-item__img">
+                <img src="./img/service/03.webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service__item service-item">
+              <div class="service-item__left">
+                <div class="service-item__title">Помощь вашему столу</div>
+                <p class="desc service-item__desc">
+                  Этот формат предполагает доставку набора продуктов и соусов от
+                  ресторана к вам домой.
+                  <br /><br />
+                  В комплекте — подробная инструкция от Бренд-шефа по
+                  приготовлению блюд.
+                  <br /><br />
+                  Подходит для тех, кто хочет почувствовать себя
+                  профессиональным кулинаром, наслаждаясь процессом
+                  приготовления и высокой кухней.
+                  <br /><br />
+                  — также мы предлагаем добавить напитки и десерты
+                </p>
+              </div>
+              <div class="service-item__img">
+                <img src="./img/service/04.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service__control">
+        <button class="btn-reset service__btn service__btn--prev">
+          <svg
+            width="21"
+            height="23"
+            viewBox="0 0 21 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.62996 20.6301L17.76 11.5001L8.62996 2.37008L10.17 0.830078L20.84 11.5001L10.17 22.1701L8.62996 20.6301Z"
+              fill="#69803E"
+            />
+            <path
+              d="M19.3 10.3999V12.5999H0.600048V10.3999H19.3Z"
+              fill="#69803E"
+            />
+          </svg>
+        </button>
+        <div class="service__pagination pagination">1/10</div>
+        <button class="btn-reset service__btn service__btn--next">
+          <svg
+            width="21"
+            height="23"
+            viewBox="0 0 21 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.62996 20.6301L17.76 11.5001L8.62996 2.37008L10.17 0.830078L20.84 11.5001L10.17 22.1701L8.62996 20.6301Z"
+              fill="#69803E"
+            />
+            <path
+              d="M19.3 10.3999V12.5999H0.600048V10.3999H19.3Z"
+              fill="#69803E"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="calc">
+  <div class="container">
+    <h2 class="title2 calc__title">Калькулятор</h2>
+
+    <div class="calc__container">
+      <div class="calc__img">
+        <img src="./img/calc2.webp" alt="" />
+      </div>
+      <div class="calc__calculator calculator">
+        <table class="calculator__table">
+          <thead>
+            <tr>
+              <th>Закуски</th>
+              <th>Кол-во</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="menu-item" data-price="5000">
+              <td>Биг-буратта с томатами 1 кг</td>
+              <td>
+                <div class="controls">
+                  <button class="minus">-</button>
+                  <input type="number" class="quantity" value="0" min="0" />
+                  <button class="plus">+</button>
+                </div>
+              </td>
+              <td>5000 ₽</td>
+            </tr>
+            <tr class="menu-item" data-price="3500">
+              <td>Рабиола/фисташка/оливка (10 шт)</td>
+              <td>
+                <div class="controls">
+                  <button class="minus">-</button>
+                  <input type="number" class="quantity" value="0" min="0" />
+                  <button class="plus">+</button>
+                </div>
+              </td>
+              <td>3500 ₽</td>
+            </tr>
+            <tr class="menu-item" data-price="4500">
+              <td>Лосось/творожный сыр (10 шт)</td>
+              <td>
+                <div class="controls">
+                  <button class="minus">-</button>
+                  <input type="number" class="quantity" value="0" min="0" />
+                  <button class="plus">+</button>
+                </div>
+              </td>
+              <td>4500 ₽</td>
+            </tr>
+            <tr class="menu-item" data-price="7000">
+              <td>Гриссини 100 гр</td>
+              <td>
+                <div class="controls">
+                  <button class="minus">-</button>
+                  <input type="number" class="quantity" value="0" min="0" />
+                  <button class="plus">+</button>
+                </div>
+              </td>
+              <td>7000 ₽</td>
+            </tr>
+            <tr class="menu-item" data-price="2500">
+              <td>Овощные палочки с соусом (10 шт)</td>
+              <td>
+                <div class="controls">
+                  <button class="minus">-</button>
+                  <input type="number" class="quantity" value="0" min="0" />
+                  <button class="plus">+</button>
+                </div>
+              </td>
+              <td>2500 ₽</td>
+            </tr>
+            <tr data-price="2500">
+              <th>Мини формат салатов:</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr class="menu-item" data-price="1300">
+              <td>Салат с осьминогом (5 шт)</td>
+              <td>
+                <div class="controls">
+                  <button class="minus">-</button>
+                  <input type="number" class="quantity" value="0" min="0" />
+                  <button class="plus">+</button>
+                </div>
+              </td>
+              <td>1300 ₽</td>
+            </tr>
+            <tr class="menu-item" data-price="900">
+              <td>Салат с ростбифом (5 шт)</td>
+              <td>
+                <div class="controls">
+                  <button class="minus">-</button>
+                  <input type="number" class="quantity" value="0" min="0" />
+                  <button class="plus">+</button>
+                </div>
+              </td>
+              <td>900 ₽</td>
+            </tr>
+            <tr class="menu-item" data-price="1600">
+              <td>Салат краб/авокадо/томаты (5 шт)</td>
+              <td>
+                <div class="controls">
+                  <button class="minus">-</button>
+                  <input type="number" class="quantity" value="0" min="0" />
+                  <button class="plus">+</button>
+                </div>
+              </td>
+              <td>1600 ₽</td>
+            </tr>
+          </tbody>
+          <tfoot class="total">
+            <tr>
+              <td class="total__price" id="total-price">Общая цена: 0</td>
+              <td>
+                <button class="btn btn-reset calculator__btn">Далее</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="specific" id="specific">
+  <div class="container">
+    <h2 class="title2 specific__title">Особенности услуг</h2>
+    <div class="specific__container">
+      <div class="specific__block">
+        <h3 class="title3 specific__capture">Уникальный подход</h3>
+        <p class="desc specific__desc">
+          Каждое мероприятие разрабатывается индивидуально: от авторского меню
+          до сервировки, оформления и атмосферы, полностью соответствующих
+          запросам клиента.
+        </p>
+      </div>
+      <div class="specific__block">
+        <h3 class="title3 specific__capture">Бренд-шеф на локации</h3>
+        <p class="desc specific__desc">
+          Весь процесс приготовления и подачи блюд проводится Бренд-шеф прямо
+          перед гостями, что позволяет ощутить магию кухни и насладиться высоким
+          профессионализмом.
+        </p>
+      </div>
+      <div class="specific__block">
+        <h3 class="title3 specific__capture">Высокое качество ингредиентов</h3>
+        <p class="desc specific__desc">
+          Только свежие продукты из нашего собственного производства. Наша
+          сыроварня и кондитерская используют исключительно натуральные
+          ингредиенты, чтобы каждая позиция в меню отличалась утонченным вкусом
+          и качеством.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="benefits" id="benefits">
+  <div class="container">
+    <h2 class="title2 title2--white benefits__title">Наши преимущества</h2>
+
+    <div class="benefits__container">
+      <div class="benefits__block">
+        <h3 class="title3 title3--white benefits__capture">Персонализация</h3>
+        <p class="desc desc--white benefits__desc">
+          Персонализация — полное соответствие вашим ожиданиям и пожеланиям
+        </p>
+      </div>
+      <div class="benefits__block">
+        <h3 class="title3 title3--white benefits__capture">Персонализация</h3>
+        <p class="desc desc--white benefits__desc">
+          Персонализация — полное соответствие вашим ожиданиям и пожеланиям
+        </p>
+      </div>
+      <div class="benefits__block">
+        <h3 class="title3 title3--white benefits__capture">Персонализация</h3>
+        <p class="desc desc--white benefits__desc">
+          Персонализация — полное соответствие вашим ожиданиям и пожеланиям
+        </p>
+      </div>
+      <div class="benefits__block">
+        <h3 class="title3 title3--white benefits__capture">Персонализация</h3>
+        <p class="desc desc--white benefits__desc">
+          Персонализация — полное соответствие вашим ожиданиям и пожеланиям
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="geo" id="geo">
+  <div class="container">
+    <div class="geo__container">
+      <div class="geo__content">
+        <h2 class="title2 geo__title">география обслуживания</h2>
+        <p class="desc geo__desc">
+          Мы работаем на любой локации Москвы и области: от центра города до
+          загородных площадок.
+          <br /><br />
+          За пределами МКАД услуги предоставляются с учётом логистики, что может
+          незначительно повлиять на стоимость.
+          <br /><br />
+          Независимо от места, мы гарантируем высочайший уровень сервиса и
+          качество Latteria 1963 Group.
+        </p>
+      </div>
+      <div class="geo__img">
+        <img src="./img/geo.webp" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="contacts" id="contacts">
+  <div class="container">
+    <h2 class="title2 contacts__title">Контактная информация</h2>
+
+    <div class="contacts__container">
+      <div class="contacts__left">
+        <address class="contacts__address address desc">
+          <span class="address__capture">Наш адрес</span>
+          <p class="address__addr">
+            <span>Latteria1963</span> Корабельная улица 17k1, Москва
+          </p>
+          <p class="address__addr">
+            <span>Bistro SI</span> Долгоруковская улица, 25k2, Москва
+          </p>
+          <p class="address__addr">
+            <span>Пр-во</span> Бумажный пр-д, 14с2, Москва, 127015
+          </p>
+        </address>
+        <div class="contacts__tel contacts-tel">
+          <div class="contacts-tel__capture">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.39511 5.35099L5.25495 4.66109C5.82234 4.20364 6.01231 3.42123 5.71236 2.7588C5.42242 2.11637 4.93751 1.19898 4.28263 0.474073C3.80272 -0.0558805 3.01535 -0.153357 2.41545 0.241588C1.39314 0.914009 -0.274057 2.44383 0.0383875 5.13853C0.0933702 5.59848 0.215846 6.2109 0.723262 7.26328C1.09069 8.02819 1.77807 9.45553 3.2428 10.8954C4.64256 12.2727 6.00482 12.9276 6.73969 13.2776C7.79699 13.785 8.40438 13.9075 8.8618 13.9625C9.08675 13.9875 9.30422 14 9.51419 14C11.8038 14 13.141 12.5227 13.7584 11.5853C14.1534 10.9854 14.0559 10.1979 13.526 9.718C12.7986 9.06307 11.8838 8.57813 11.2414 8.28816C10.579 7.9882 9.79664 8.17817 9.33921 8.74561L8.64934 9.60551C8.38688 9.92797 7.97696 10.093 7.57453 10.038C6.43223 9.87798 5.33494 8.70312 5.30994 8.67811C5.29744 8.66561 4.12265 7.56824 3.96267 6.42588C3.90519 6.02342 4.07266 5.61348 4.39511 5.35099Z"
+              />
+            </svg>
+            Телефон:
+          </div>
+          <a href="tel:+79771963555" class="contacts-tel__tel">
+            +7 (977) 196-35-55
+          </a>
+        </div>
+        <div class="contacts__socials">
+          <a href="#" class="contacts__link">
+            <img src="./img/soc/tg.svg" alt="" />
+          </a>
+          <a href="#" class="contacts__link">
+            <img src="./img/soc/vk.svg" alt="" />
+          </a>
+          <a href="#" class="contacts__link">
+            <img src="./img/soc/whatsapp.svg" alt="" />
+          </a>
+          <a href="#" class="contacts__link">
+            <img src="./img/soc/insta.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="contacts__right">
+        <div id="map" class="contacts__map"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://api-maps.yandex.ru/v3/?apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35
+&lang=ru_RU"></script>
+<script>
+  initMap();
+
+  async function initMap() {
+    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
+    await ymaps3.ready;
+
+    const { YMap, YMapDefaultSchemeLayer } = ymaps3;
+
+    // Иницилиазируем карту
+    const map = new YMap(
+      // Передаём ссылку на HTMLElement контейнера
+      document.getElementById("map"),
+
+      // Передаём параметры инициализации карты
+      {
+        location: {
+          // Координаты центра карты
+          center: [37.588144, 55.733842],
+
+          // Уровень масштабирования
+          zoom: 10,
+        },
+      }
+    );
+
+    // Добавляем слой для отображения схематической карты
+    map.addChild(new YMapDefaultSchemeLayer());
+  }
+</script>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a href="./" class="footer__logo">
+        <img src="./img/about.webp" alt="" />
+      </a>
+
+      <div class="footer__col">
+        <div class="footer__tel contacts-tel">
+          <div class="contacts__tel contacts-tel contacts-tel--white">
+            <div class="contacts-tel__capture">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.39511 5.35099L5.25495 4.66109C5.82234 4.20364 6.01231 3.42123 5.71236 2.7588C5.42242 2.11637 4.93751 1.19898 4.28263 0.474073C3.80272 -0.0558805 3.01535 -0.153357 2.41545 0.241588C1.39314 0.914009 -0.274057 2.44383 0.0383875 5.13853C0.0933702 5.59848 0.215846 6.2109 0.723262 7.26328C1.09069 8.02819 1.77807 9.45553 3.2428 10.8954C4.64256 12.2727 6.00482 12.9276 6.73969 13.2776C7.79699 13.785 8.40438 13.9075 8.8618 13.9625C9.08675 13.9875 9.30422 14 9.51419 14C11.8038 14 13.141 12.5227 13.7584 11.5853C14.1534 10.9854 14.0559 10.1979 13.526 9.718C12.7986 9.06307 11.8838 8.57813 11.2414 8.28816C10.579 7.9882 9.79664 8.17817 9.33921 8.74561L8.64934 9.60551C8.38688 9.92797 7.97696 10.093 7.57453 10.038C6.43223 9.87798 5.33494 8.70312 5.30994 8.67811C5.29744 8.66561 4.12265 7.56824 3.96267 6.42588C3.90519 6.02342 4.07266 5.61348 4.39511 5.35099Z"
+                />
+              </svg>
+              Телефон:
+            </div>
+            <a href="tel:+79771963555" class="contacts-tel__tel">
+              +7 (977) 196-35-55
+            </a>
+          </div>
+        </div>
+        <div class="footer__tel contacts-tel">
+          <div class="contacts__tel contacts-tel contacts-tel--white">
+            <div class="contacts-tel__capture">
+              <svg
+                width="14"
+                height="11"
+                viewBox="0 0 14 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.735352 0.0197633L6.23035 6.22542C6.44035 6.46258 6.72035 6.58116 7.01785 6.58116C7.31535 6.58116 7.59535 6.44281 7.80535 6.22542L13.3004 0.0197633C13.2654 0.0197633 13.2304 0 13.1954 0H0.840351C0.805351 0.0197632 0.770352 0.0197633 0.735352 0.0197633Z"
+                  fill="white"
+                />
+                <path
+                  d="M8.2775 6.77834C7.945 7.15384 7.49 7.37123 7 7.37123C6.51 7.37123 6.0725 7.15384 5.7225 6.77834L0.1225 0.454102C0.0525 0.612207 0 0.790077 0 0.967946V9.70329C0 10.2369 0.385 10.6519 0.84 10.6519H13.16C13.6325 10.6519 14 10.2171 14 9.70329V0.967946C14 0.790077 13.9475 0.612208 13.8775 0.473865L8.2775 6.77834Z"
+                  fill="white"
+                />
+              </svg>
+              Почта
+            </div>
+            <a href="mailto:@gmail.com" class="contacts-tel__tel">
+              @gmail.com
+            </a>
+          </div>
+        </div>
+        <div class="footer__tel contacts-tel">
+          <div class="contacts__tel contacts-tel contacts-tel--white">
+            <div class="contacts-tel__capture">Соц-сети</div>
+            <div class="footer__socials">
+              <a href="#" class="footer__link">
+                <img src="./img/soc/tg.svg" alt="" />
+              </a>
+              <a href="#" class="footer__link">
+                <img src="./img/soc/vk.svg" alt="" />
+              </a>
+              <a href="#" class="footer__link">
+                <img src="./img/soc/whatsapp.svg" alt="" />
+              </a>
+              <a href="#" class="footer__link">
+                <img src="./img/soc/insta.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <nav class="footer-nav">
+          <ul class="list-reset footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Ценности</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Услуги</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Почему мы? </a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Наша команда</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Видео</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Блог</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__others">
+          <a href="#">Публичная офера</a>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+        <button class="btn btn-reset footer__btn">Заказать звонок</button>
+        <small class="footer__agree">
+          Нажимая на кнопку “Обратный звонок” Я соглашаюсь с условиями Политики
+          Конфиденциальности
+        </small>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <small>2024 © Все права защищены</small>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>
