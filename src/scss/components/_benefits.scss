@@ -1,0 +1,42 @@
+.benefits {
+  padding: 5.5rem 0;
+  background-color: #212c28;
+  @include mobile {
+    padding: 3rem 0;
+  }
+  &__title {
+    margin-bottom: 7.5rem;
+
+    @include mobile {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__container {
+    max-width: 100rem;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem 12rem;
+
+    @include mobile {
+      max-width: 100%;
+      gap: 3rem 2rem;
+    }
+  }
+
+  &__capture {
+    margin-bottom: 2rem;
+
+    @include mobile {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__desc {
+    @include mobile {
+      font-size: 1.2rem;
+    }
+  }
+}

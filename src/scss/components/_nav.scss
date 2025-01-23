@@ -1,0 +1,40 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+  }
+  &__link {
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 108%;
+    text-transform: uppercase;
+    color: #000;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 10%;
+      opacity: 0;
+      height: 1px;
+      background-color: currentColor;
+      transition: 0.2s ease-in;
+    }
+
+    @include hover {
+      &::after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}

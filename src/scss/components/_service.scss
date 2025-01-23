@@ -1,0 +1,106 @@
+.service {
+  background-color: #212c28;
+  padding: 5rem 0;
+  @include mobile {
+    padding: 3rem 0;
+  }
+  &__title {
+    margin-bottom: 6rem;
+    @include mobile {
+      margin-bottom: 2rem;
+    }
+  }
+  &__container {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+
+    @include mobile {
+      padding: 4rem 1.5rem;
+    }
+  }
+  &__slider {
+    margin-bottom: 2rem;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.7rem;
+    height: 3.7rem;
+    border: 2px solid #69803e;
+    border-radius: 100%;
+    &--prev {
+      transform: rotateZ(180deg);
+    }
+  }
+
+  &__pagination {
+    width: auto;
+    position: static;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 108%;
+    color: #69803e;
+  }
+
+  &__slider {
+    .swiper-slide {
+      height: auto;
+    }
+  }
+}
+
+.service-item {
+  display: flex;
+  gap: 14rem;
+  height: 100%;
+  @include mobile {
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 108%;
+    text-transform: uppercase;
+    color: #fff;
+
+    @include mobile {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+  &__desc {
+    color: #fff;
+    @include mobile {
+      line-height: 135%;
+    }
+  }
+  &__img {
+    flex-shrink: 0;
+    width: 40rem;
+    height: 44rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    @include mobile {
+      width: 100%;
+      height: 25rem;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

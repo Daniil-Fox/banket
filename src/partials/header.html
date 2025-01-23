@@ -1,0 +1,51 @@
+<header class="header">
+  <div class="container">
+    <div class="header__container">
+      <nav class="nav header__nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#about" class="nav__link"> О нас </a>
+          </li>
+          <li class="nav__item">
+            <a href="#service" class="nav__link"> Услуги </a>
+          </li>
+          <li class="nav__item">
+            <a href="#specific" class="nav__link"> Особенности услуг </a>
+          </li>
+          <li class="nav__item">
+            <a href="#benefits" class="nav__link"> Наши преимущества </a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./" class="header__logo">
+        <img src="./img/logo.webp" alt="" />
+      </a>
+      <div class="header__right">
+        <nav class="nav header__nav">
+          <ul class="list-reset nav__list">
+            <li class="nav__item">
+              <a href="#geo" class="nav__link"> Где обслуживаем? </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+79771963555" class="header__tel">
+          <img src="./img/whatsapp.svg" alt="" />
+          <span>+7 (977) 196-35-55</span>
+        </a>
+
+        <button
+          class="btn-reset burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger
+        >
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+    @include('./menu.html')
+  </div>
+</header>
