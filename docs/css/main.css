@@ -866,7 +866,7 @@ a {
   }
 }
 .calc__title {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 @media (max-width: 768px) {
   .calc__title {
@@ -889,10 +889,10 @@ a {
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 76.2rem;
+  -webkit-transform: translate(-35%, -50%);
+  -ms-transform: translate(-35%, -50%);
+  transform: translate(-35%, -50%);
+  width: 50.2rem;
   aspect-ratio: 1/1;
 }
 @media (max-width: 768px) {
@@ -910,8 +910,8 @@ a {
 .calc__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .calc__calculator {
   grid-column: 4/5 span;
@@ -919,7 +919,8 @@ a {
 }
 
 .calculator__btn {
-  padding: 2rem 8rem;
+  padding: 1.3rem 8rem;
+  font-size: 1.4rem;
 }
 @media (max-width: 768px) {
   .calculator__btn {
@@ -930,21 +931,21 @@ a {
   display: block;
   position: relative;
   z-index: 5;
-  padding: 3.4rem 2rem;
+  padding: 2rem 2rem;
   border: 2px solid #69803e;
   border-radius: 10px;
 }
 .calculator__table .controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.2rem;
   border: 1px solid #69803e;
   border-radius: 0.5rem;
   gap: 5px;
@@ -972,8 +973,9 @@ a {
   }
 }
 .calculator__table .controls .quantity {
+  pointer-events: none;
   padding: 0;
-  width: 4rem;
+  width: 3.5rem;
   text-align: center;
   border: none;
 }
@@ -997,7 +999,7 @@ a {
 }
 .calculator__table tbody td {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 108%;
 }
 .calculator__table tbody td:nth-child(1) {
@@ -1023,7 +1025,7 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 3rem;
-  padding: 1.6rem 0;
+  padding: 0.8rem 0;
 }
 @media (max-width: 768px) {
   .calculator__table tr {
@@ -1033,7 +1035,7 @@ a {
 }
 .calculator__table th {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 108%;
   color: #000;
   text-align: left;
@@ -1056,7 +1058,7 @@ a {
 
 .total__price {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 108%;
 }
 

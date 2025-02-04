@@ -357,20 +357,20 @@
 
     <div class="calc__container">
       <div class="calc__img">
-        <img src="./img/calc2.webp" alt="" />
+        <img src="./img/calc3.webp" alt="" />
       </div>
       <div class="calc__calculator calculator">
         <table class="calculator__table">
           <thead>
             <tr>
-              <th>Закуски</th>
+              <th>Паста</th>
               <th>Кол-во</th>
               <th>Цена</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="menu-item" data-price="5000">
-              <td>Биг-буратта с томатами 1 кг</td>
+            <tr class="menu-item" data-price="850">
+              <td>Тальолини скарпетта с помидорами</td>
               <td>
                 <div class="controls">
                   <button class="minus">-</button>
@@ -378,10 +378,10 @@
                   <button class="plus">+</button>
                 </div>
               </td>
-              <td>5000 ₽</td>
+              <td>850 ₽</td>
             </tr>
-            <tr class="menu-item" data-price="3500">
-              <td>Рабиола/фисташка/оливка (10 шт)</td>
+            <tr class="menu-item" data-price="1490">
+              <td>Тальятелле с трюфелем</td>
               <td>
                 <div class="controls">
                   <button class="minus">-</button>
@@ -389,10 +389,10 @@
                   <button class="plus">+</button>
                 </div>
               </td>
-              <td>3500 ₽</td>
+              <td>1490 ₽</td>
             </tr>
-            <tr class="menu-item" data-price="4500">
-              <td>Лосось/творожный сыр (10 шт)</td>
+            <tr class="menu-item" data-price="1290">
+              <td>Равиолли с лососем, креветками и крабом</td>
               <td>
                 <div class="controls">
                   <button class="minus">-</button>
@@ -400,10 +400,10 @@
                   <button class="plus">+</button>
                 </div>
               </td>
-              <td>4500 ₽</td>
+              <td>1290 ₽</td>
             </tr>
-            <tr class="menu-item" data-price="7000">
-              <td>Гриссини 100 гр</td>
+            <tr class="menu-item" data-price="930">
+              <td>Лазанья ди карне</td>
               <td>
                 <div class="controls">
                   <button class="minus">-</button>
@@ -411,10 +411,10 @@
                   <button class="plus">+</button>
                 </div>
               </td>
-              <td>7000 ₽</td>
+              <td>930 ₽</td>
             </tr>
-            <tr class="menu-item" data-price="2500">
-              <td>Овощные палочки с соусом (10 шт)</td>
+            <tr class="menu-item" data-price="1080">
+              <td>Равиолони с трюфелем, белыми грибами и сыром робиола</td>
               <td>
                 <div class="controls">
                   <button class="minus">-</button>
@@ -422,7 +422,7 @@
                   <button class="plus">+</button>
                 </div>
               </td>
-              <td>2500 ₽</td>
+              <td>1080 ₽</td>
             </tr>
             <tr data-price="2500">
               <th>Мини формат салатов:</th>
@@ -430,7 +430,7 @@
               <th></th>
             </tr>
             <tr class="menu-item" data-price="1300">
-              <td>Салат с осьминогом (5 шт)</td>
+              <td>Салат польпо алла лучана</td>
               <td>
                 <div class="controls">
                   <button class="minus">-</button>
@@ -440,8 +440,8 @@
               </td>
               <td>1300 ₽</td>
             </tr>
-            <tr class="menu-item" data-price="900">
-              <td>Салат с ростбифом (5 шт)</td>
+            <tr class="menu-item" data-price="890">
+              <td>Зеленый мятный салат с авокадо</td>
               <td>
                 <div class="controls">
                   <button class="minus">-</button>
@@ -449,10 +449,10 @@
                   <button class="plus">+</button>
                 </div>
               </td>
-              <td>900 ₽</td>
+              <td>890 ₽</td>
             </tr>
             <tr class="menu-item" data-price="1600">
-              <td>Салат краб/авокадо/томаты (5 шт)</td>
+              <td>Салат с крабом, авокадо и томатами</td>
               <td>
                 <div class="controls">
                   <button class="minus">-</button>
@@ -467,7 +467,15 @@
             <tr>
               <td class="total__price" id="total-price">Общая цена: 0</td>
               <td>
-                <button class="btn btn-reset calculator__btn">Далее</button>
+                <form action="#" class="calc-form" id="orderForm">
+                  <button class="btn btn-reset calculator__btn">Далее</button>
+                  <input
+                    type="hidden"
+                    name="totalPrice"
+                    id="totalPriceInput"
+                    value="0"
+                  />
+                </form>
               </td>
             </tr>
           </tfoot>
