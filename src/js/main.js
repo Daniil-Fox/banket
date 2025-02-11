@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function updateHiddenInput(row, quantity) {
-    const dishName = row.querySelector("td").textContent; // Название блюда
+    const dishName = row.querySelector(
+      ".menu-item>div:first-child"
+    ).textContent;
     let hiddenInput = orderForm.querySelector(
       `input[name="dishes[]"][data-dish-name="${dishName}"]`
     );

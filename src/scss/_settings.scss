@@ -116,7 +116,7 @@ a {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 108%;
+  line-height: 130%;
   text-transform: uppercase;
   color: #fff;
   position: relative;
@@ -132,7 +132,7 @@ a {
     transform: translateX(-50%);
     font-weight: 400;
     font-size: 1.2rem;
-    line-height: 108%;
+    line-height: 130%;
     color: #fff;
     text-transform: initial;
 
@@ -173,7 +173,7 @@ a {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 4rem;
-  line-height: 108%;
+  line-height: 130%;
   text-transform: uppercase;
   color: #000;
 
@@ -191,7 +191,7 @@ a {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 3rem;
-  line-height: 108%;
+  line-height: 130%;
   text-transform: uppercase;
   color: #000;
   &--white {
@@ -207,7 +207,7 @@ a {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 2rem;
-  line-height: 108%;
+  line-height: 130%;
   color: #000;
   &--white {
     color: #fff;

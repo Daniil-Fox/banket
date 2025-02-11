@@ -10802,7 +10802,7 @@ document.addEventListener("DOMContentLoaded", function () {
     alert(totalPrice); // Выводим итог (можно заменить на другое действие)
   });
   function updateHiddenInput(row, quantity) {
-    const dishName = row.querySelector("td").textContent; // Название блюда
+    const dishName = row.querySelector(".menu-item>div:first-child").textContent;
     let hiddenInput = orderForm.querySelector(`input[name="dishes[]"][data-dish-name="${dishName}"]`);
     if (!hiddenInput && quantity > 0) {
       // Создание нового скрытого инпута, если его еще нет
