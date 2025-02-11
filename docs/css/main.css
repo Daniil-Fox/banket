@@ -1760,7 +1760,16 @@ a {
   }
 }
 .footer__bottom {
-  padding: 1.7rem 7.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.7rem 0;
 }
 @media (max-width: 768px) {
   .footer__bottom {
@@ -1777,6 +1786,10 @@ a {
   .footer__bottom small {
     font-size: 1rem;
   }
+}
+.footer__bottom a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .footer-nav__item:not(:last-child) {
