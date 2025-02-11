@@ -938,10 +938,13 @@ a {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #69803e #e9e9e9;
+  padding-bottom: 0;
 }
 @media (max-width: 768px) {
   .calculator__table {
     background-color: #fff;
+    max-height: 40rem;
+    padding-top: 0;
   }
 }
 .calculator__table .controls {
@@ -1103,11 +1106,23 @@ a {
 .calculator__table td:last-child {
   text-align: right;
 }
+.calculator tfoot {
+  position: sticky;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 .total__price {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 108%;
+}
+@media (max-width: 768px) {
+  .total__price {
+    font-size: 1.5rem;
+  }
 }
 
 .specific {

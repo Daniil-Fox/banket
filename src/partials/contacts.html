@@ -7,13 +7,16 @@
         <address class="contacts__address address desc">
           <span class="address__capture">Наш адрес</span>
           <p class="address__addr">
-            <span>Latteria1963</span> Корабельная улица 17k1, Москва
+            <span>Производство Latteria 1963</span> г. Москва, Бумажный проезд,
+            14 с2
           </p>
           <p class="address__addr">
-            <span>Bistro SI</span> Долгоруковская улица, 25k2, Москва
+            <span>Ресторан Latteria 1963</span> г. Москва, Корабельная улица 17
+            k1
           </p>
           <p class="address__addr">
-            <span>Пр-во</span> Бумажный пр-д, 14с2, Москва, 127015
+            <span>Ресторан Bistro SI</span> г. Москва, Долгоруковская улица, 25
+            k2
           </p>
         </address>
         <div class="contacts__tel contacts-tel">
@@ -31,21 +34,29 @@
             </svg>
             Телефон:
           </div>
-          <a href="tel:+79771963555" class="contacts-tel__tel">
-            +7 (977) 196-35-55
+          <a href="tel:+79800034998" class="contacts-tel__tel">
+            +7 (980) 003-49-98
           </a>
         </div>
         <div class="contacts__socials">
-          <a href="#" class="contacts__link">
+          <a
+            href="https://t.me/eventlatteria1963"
+            target="_blank"
+            class="contacts__link"
+          >
             <img src="./img/soc/tg.svg" alt="" />
           </a>
-          <a href="#" class="contacts__link">
+          <!-- <a href="#" class="contacts__link">
             <img src="./img/soc/vk.svg" alt="" />
           </a>
           <a href="#" class="contacts__link">
             <img src="./img/soc/whatsapp.svg" alt="" />
-          </a>
-          <a href="#" class="contacts__link">
+          </a> -->
+          <a
+            href="https://www.instagram.com/events_latteria1963?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+            class="contacts__link"
+            target="_blank"
+          >
             <img src="./img/soc/insta.svg" alt="" />
           </a>
         </div>
@@ -56,35 +67,34 @@
     </div>
   </div>
 </section>
-<script src="https://api-maps.yandex.ru/v3/?apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35
-&lang=ru_RU"></script>
+<script
+  src="https://api-maps.yandex.ru/2.1/?apikey=221cbec3-01c0-4b1a-8417-d7d65e719c35&lang=ru_RU"
+  type="text/javascript"
+></script>
+
 <script>
-  initMap();
+  ymaps.ready(init);
 
-  async function initMap() {
-    // Промис `ymaps3.ready` будет зарезолвлен, когда загрузятся все компоненты основного модуля API
-    await ymaps3.ready;
+  function init() {
+    // Координаты центра и метки
+    const coordinates = [55.682018, 37.697547];
 
-    const { YMap, YMapDefaultSchemeLayer } = ymaps3;
+    // Создаем карту
+    const map = new ymaps.Map("map", {
+      center: coordinates, // Центр карты
+      zoom: 16, // Уровень масштабирования
+      controls: ["zoomControl", "typeSelector"], // Элементы управления на карте
+    });
 
-    // Иницилиазируем карту
-    const map = new YMap(
-      // Передаём ссылку на HTMLElement контейнера
-      document.getElementById("map"),
-
-      // Передаём параметры инициализации карты
+    // Создаем стандартную метку красного цвета
+    const placemark = new ymaps.Placemark(
+      coordinates, // Координаты метки
       {
-        location: {
-          // Координаты центра карты
-          center: [37.588144, 55.733842],
-
-          // Уровень масштабирования
-          zoom: 10,
-        },
+        preset: "islands#redIcon", // Стандартная красная метка
       }
     );
 
-    // Добавляем слой для отображения схематической карты
-    map.addChild(new YMapDefaultSchemeLayer());
+    // Добавляем метку на карту
+    map.geoObjects.add(placemark);
   }
 </script>
