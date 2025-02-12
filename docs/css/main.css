@@ -111,10 +111,6 @@ a {
   text-decoration: none;
 }
 
-.site-container {
-  overflow: hidden;
-}
-
 .is-hidden {
   display: none !important; /* stylelint-disable-line declaration-no-important */
 }
@@ -416,7 +412,8 @@ a {
 }
 
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 100;
   background-color: #fff;
 }
@@ -852,6 +849,7 @@ a {
 .calc {
   padding: 5rem 0;
   background-color: #fff;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .calc {
@@ -1310,6 +1308,8 @@ a {
 @media (max-width: 768px) {
   .benefits__container {
     max-width: 100%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem 2rem;
   }
 }
@@ -1319,6 +1319,7 @@ a {
 @media (max-width: 768px) {
   .benefits__capture {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 768px) {
@@ -1516,7 +1517,7 @@ a {
   display: block;
   margin: 0;
   margin-bottom: 1.5rem;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   line-height: 89%;
   color: #000;
 }
@@ -1557,19 +1558,22 @@ a {
     gap: 1rem;
   }
 }
-.contacts-tel svg {
+.contacts-tel svg,
+.contacts-tel img {
+  display: block;
   width: 1.4rem;
   height: 1.4rem;
   fill: #000;
 }
 @media (max-width: 768px) {
-  .contacts-tel svg {
+  .contacts-tel svg,
+  .contacts-tel img {
     width: 1.2rem;
     height: 1.2rem;
   }
 }
 .contacts-tel__capture {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 89%;
   color: #000;
@@ -1709,7 +1713,6 @@ a {
   gap: 2rem;
   font-weight: 300;
   font-size: 1.8rem;
-  text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
   color: #fff;
@@ -1736,7 +1739,7 @@ a {
   text-transform: initial;
 }
 .footer__btn:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
   .footer__btn:not(:last-child) {
@@ -1767,6 +1770,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   padding: 1.7rem 0;
+  padding-right: 2rem;
 }
 @media (max-width: 768px) {
   .footer__bottom {

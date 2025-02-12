@@ -1,6 +1,7 @@
 .calc {
   padding: 5rem 0;
   background-color: #fff;
+  overflow: hidden;
   @include mobile {
     padding: 3rem 0;
   }
