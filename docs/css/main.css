@@ -559,7 +559,6 @@ a {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 108%;
-  text-transform: uppercase;
   color: #000;
 }
 .nav__link::after {
@@ -814,7 +813,6 @@ a {
   font-weight: 400;
   font-size: 3rem;
   line-height: 108%;
-  text-transform: uppercase;
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -1518,9 +1516,12 @@ a {
   display: block;
   margin: 0;
   margin-bottom: 1.5rem;
-  font-weight: 500;
+  font-weight: 400 !important;
   line-height: 89%;
   color: #000;
+}
+.address__capture span {
+  font-weight: 400;
 }
 .address__addr {
   margin: 0;
@@ -1568,7 +1569,7 @@ a {
   }
 }
 .contacts-tel__capture {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2rem;
   line-height: 89%;
   color: #000;
