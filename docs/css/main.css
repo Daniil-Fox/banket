@@ -416,6 +416,8 @@ a {
   top: 0;
   z-index: 100;
   background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 768px) {
   .header {
