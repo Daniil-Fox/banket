@@ -170,11 +170,9 @@ a {
 
 .title2 {
   margin: 0;
-  font-family: var(--second-family);
   font-weight: 400;
   font-size: 4rem;
   line-height: 130%;
-  text-transform: uppercase;
   color: #000;
 
   &--white {
@@ -188,11 +186,9 @@ a {
 
 .title3 {
   margin: 0;
-  font-family: var(--second-family);
   font-weight: 400;
   font-size: 3rem;
   line-height: 130%;
-  text-transform: uppercase;
   color: #000;
   &--white {
     color: #fff;
