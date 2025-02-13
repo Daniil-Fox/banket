@@ -890,6 +890,7 @@ a {
 }
 @media (max-width: 768px) {
   .calc__img {
+    display: none;
     width: 27rem;
     -webkit-transform: none;
     -ms-transform: none;
