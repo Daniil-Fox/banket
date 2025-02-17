@@ -10801,9 +10801,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalPrice = totalPriceElement.textContent;
     alert(totalPrice); // Выводим итог (можно заменить на другое действие)
   });
+  function removeCharactersRegex(str, charsToRemove) {
+    const regex = new RegExp(`[${charsToRemove}]`, "g");
+    return str.replace(regex, "");
+  }
   function updateHiddenInput(row, quantity) {
     const dishName = row.querySelector(".menu-item>div:first-child").textContent;
-    let hiddenInput = orderForm.querySelector(`input[name="dishes[]"][data-dish-name="${dishName}"]`);
+    const str = removeCharactersRegex(removeCharactersRegex(dishName.trim(), '"'), "\n");
+    let hiddenInput = orderForm.querySelector(`input[data-dish-name="${str}"]`);
     if (!hiddenInput && quantity > 0) {
       // Создание нового скрытого инпута, если его еще нет
       hiddenInput = document.createElement("input");
