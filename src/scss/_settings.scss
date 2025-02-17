@@ -247,3 +247,24 @@ a {
 .burger {
   @include burger;
 }
+
+.up {
+  position: fixed;
+  z-index: 10;
+  right: 5rem;
+  bottom: 5rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 5px rgba(#000, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  cursor: pointer;
+  img {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+  }
+}

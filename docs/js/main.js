@@ -10832,6 +10832,10 @@ document.addEventListener("dblclick", function (event) {
 }, {
   passive: false
 });
+document.querySelector(".up").addEventListener("click", e => {
+  e.preventDefault();
+  window.scrollTo(0, 0);
+});
 })();
 
 /******/ })()

@@ -74,10 +74,10 @@
             <a href="#service" class="nav__link"> Услуги </a>
           </li>
           <li class="nav__item">
-            <a href="#specific" class="nav__link"> Особенности услуг </a>
+            <a href="#calc" class="nav__link"> Калькулятор </a>
           </li>
           <li class="nav__item">
-            <a href="#benefits" class="nav__link"> Наши преимущества </a>
+            <a href="#specific" class="nav__link"> Особенности услуг </a>
           </li>
         </ul>
       </nav>
@@ -91,7 +91,7 @@
               <a href="#geo" class="nav__link"> Где обслуживаем? </a>
             </li>
             <li class="nav__item">
-              <a href="#calc" class="nav__link"> Калькулятор </a>
+              <a href="#benefits" class="nav__link"> Преимущества </a>
             </li>
             <li class="nav__item">
               <a href="#contacts" class="nav__link"> Контакты </a>
@@ -659,7 +659,7 @@
 
           <div class="menu-item" data-price="1000">
             <div>
-              Профитроли с ванильным кремом и шоколадом (40 гр/перс, 5 шт)
+              Профитроли с ванильным кремом и шоколадом (50 гр/перс, 5 шт)
             </div>
             <div class="controls">
               <button class="minus">-</button>
@@ -704,14 +704,14 @@
             <div>12 000 ₽</div>
           </div>
 
-          <div class="menu-item" data-price="55750">
+          <div class="menu-item" data-price="57000">
             <div>Тирамису классический 100 см (230 гр/перс, 1 шт / 23 кг)</div>
             <div class="controls">
               <button class="minus">-</button>
               <input type="number" class="quantity" value="0" min="0" />
               <button class="plus">+</button>
             </div>
-            <div>55 750 ₽</div>
+            <div>57 000 ₽</div>
           </div>
 
           <div class="menu-item" data-price="62500">
@@ -1008,6 +1008,12 @@
     const placemark = new ymaps.Placemark(
       coordinates, // Координаты метки
       {
+        hintContent:
+          "Производство Latteria 1963: Москва, Бумажный проезд, 14 с2",
+        balloonContent:
+          "Производство Latteria 1963: Москва, Бумажный проезд, 14 с2",
+      },
+      {
         preset: "islands#redIcon", // Стандартная красная метка
       }
     );
@@ -1017,6 +1023,9 @@
   }
 </script>
 
+        <div class="up">
+          <img src="./img/up.webp" alt="" />
+        </div>
       </main>
       <footer class="footer">
   <div class="container">
