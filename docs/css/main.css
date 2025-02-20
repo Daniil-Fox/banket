@@ -439,6 +439,11 @@ a {
   -o-object-fit: contain;
   object-fit: contain;
 }
+@media (max-width: 768px) {
+  .up {
+    display: none;
+  }
+}
 
 .header {
   position: relative;
@@ -507,7 +512,6 @@ a {
   justify-content: center;
   width: 10.7rem;
   aspect-ratio: 1/1;
-  margin-left: 5rem;
 }
 @media (max-width: 768px) {
   .header__logo {
@@ -1877,7 +1881,5 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  gap: 1.2rem;
 }/*# sourceMappingURL=main.css.map */

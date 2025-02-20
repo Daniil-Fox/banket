@@ -267,4 +267,8 @@ a {
     height: 2rem;
     object-fit: contain;
   }
+
+  @include mobile {
+    display: none;
+  }
 }
